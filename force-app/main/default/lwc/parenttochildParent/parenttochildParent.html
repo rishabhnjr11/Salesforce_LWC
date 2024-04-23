@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-p-horizontal_medium" title="Parent To Child communications">
+
+        <lightning-card title="Parent Component">
+            <lightning-input 
+                type="text"
+                placeholder="Enter Any Text"
+                onchange={handleChange}
+                label="Field">sdhsakjfsdkf
+            </lightning-input>
+            <lightning-button 
+                variant="brand"
+                label="Send Data to Child"
+                onclick={sendData}
+                >
+            </lightning-button>
+
+        </lightning-card>
+
+        <div class="slds-p-horizontal_medium" >
+            <c-parenttochild-child 
+            input-data = {sData}></c-parenttochild-child>
+        </div>
+    </div>
+</template>

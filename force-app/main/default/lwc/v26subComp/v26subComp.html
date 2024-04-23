@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Sub LWc">
+        <p class="slds-text-align_center">
+
+            <!-- JS understand all number as String so for number we use parseInt(), 
+            however in LWC we have below method called ligtning-formatted-number-->
+            count: <lightning-formatted-number value={counter}></lightning-formatted-number>
+        </p>
+    </lightning-card>
+</template>

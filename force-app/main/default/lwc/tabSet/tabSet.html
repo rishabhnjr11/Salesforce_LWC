@@ -1,0 +1,24 @@
+<template>
+     <lightning-card>
+        <lightning-tabset variant="scoped">
+            <lightning-tab label="Tab One">
+                Click on Tab Two for options
+                <c-record-view-form></c-record-view-form>
+            </lightning-tab>    
+
+            <lightning-tab label="Tab Two">
+                Click on Tab Three for options
+                <!-- Child Component -->
+                <c-carousel-demo></c-carousel-demo>
+            </lightning-tab>
+
+            <lightning-tab label="Tab Three">
+                There are no options
+                <c-my-first-l-w-c></c-my-first-l-w-c>   
+            </lightning-tab>
+
+        </lightning-tabset>
+
+
+     </lightning-card>
+</template>

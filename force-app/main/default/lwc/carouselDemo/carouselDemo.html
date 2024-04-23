@@ -1,0 +1,40 @@
+<template>
+    <!-- Hard coded -->
+    <!-- <lightning-carousel disable-auto-scroll>
+        <lightning-carousel-image
+            src = "https://b.fssta.com/uploads/application/soccer/headshots/713.png"
+            header = "Neymar JR"
+            description = "Injured"
+            alternative-text = "Neymar Image"
+            href = "https://en.wikipedia.org/wiki/Neymar"
+        >
+        </lightning-carousel-image>
+        
+        <lightning-carousel-image
+            src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHnhWFBFpqpDEQE_DyEaYEXHwa8QY4mAsBTeZaif0XvmL1sXI2"
+            header = "Messi"
+            description = "Injured"
+            alternative-text = "Messi Image"
+            href = "https://en.wikipedia.org/wiki/Lionel_Messi"
+        >
+        </lightning-carousel-image>
+    </lightning-carousel> -->
+
+    <!-- Optimised Solution -->
+    <lightning-carousel>
+        <!-- here we will pass array of objects and run for loop over that -->
+        <template if:true={players}>
+            <template for:each={players} for:item="footballer">
+                <lightning-carousel-image
+                    key ={footballer.id}
+                    src = {footballer.src}
+                    header = {footballer.header}
+                    href = {footballer.href}
+                    description = {footballer.description}
+                    alternate-text = "test"
+                    ></lightning-carousel-image>
+            </template>
+        </template>
+    </lightning-carousel>
+    
+</template>

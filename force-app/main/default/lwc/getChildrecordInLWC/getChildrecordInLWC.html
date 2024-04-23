@@ -1,0 +1,33 @@
+<template>
+    <!-- LWC Button -->
+    <lightning-button 
+        label={buttonStatus}
+        variant="brand"
+        onclick={handleClick}
+    ></lightning-button>
+    
+
+    <!-- Lwc Data Table -->
+    
+    <template if:true={showData}>
+        <!-- Oppty Table -->
+        <lightning-datatable
+                        key-field="id"
+                        data ={opptyData}
+                        columns={columns1}
+                        hide-checkbox-column>
+        </lightning-datatable> 
+
+        <!-- Contact Table -->
+        <lightning-datatable
+                            key-field="id"
+                            data ={contactData}
+                            columns={columns2}
+                            hide-checkbox-column>
+        </lightning-datatable>
+    </template>
+    
+
+
+
+</template>
