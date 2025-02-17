@@ -1,0 +1,22 @@
+<template>
+    <div style="height:300px">
+
+
+        <!-- show-row-number-column is a property used to show column number in salesforce -->
+        <!-- draft-values is a property used to store values that are changed while in-line edit -->
+        <!-- onsave is used to perform action when save button is clicked after making any changes -->
+        <!-- hide-checkbox-column is used to hide the checkbox appear at the starting of the row -->
+        <lightning-datatable key-field="Id"
+                             data={data}
+                             show-row-number-column
+                             onsave={handleSave}
+                             draft-values={saveDraftValue}
+                             hide-checkbox-column
+                             columns={columns}>
+                            
+                            
+        </lightning-datatable>
+
+
+    </div>
+</template>

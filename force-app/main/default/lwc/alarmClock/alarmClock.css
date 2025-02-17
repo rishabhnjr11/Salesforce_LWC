@@ -1,0 +1,65 @@
+/* host means whole LWC component */
+:host(){
+    --dark-blue: #243356;
+    --white: #ffffff;
+    --yellow: #ffcd0a;
+    --light-blue: #00D9FE;
+    --size-16: 16px;
+}
+
+/* .app{
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/AlarmClockGb);
+    background-size: cover;
+    background-repeat: no-repeat;
+     width: 100vw;
+    border: 0;
+    padding: 0;
+    margin: -10px; 
+} 
+*/
+
+
+.alarm-card{
+    max-width: 420px;
+    padding: 30px;
+    background-color: var(--dark-blue);
+    width: 100%;
+    border-radius: var(--size-16);
+    /* display: flex; */
+    margin: 30px auto;
+    color: var(--white);
+}
+h1{
+    color: var(--yellow);
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+}
+h2{
+    font-size: 48px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--light-blue);
+    margin: 20px auto;
+}
+button{
+    background: var(--yellow);
+    font-size: 20px;
+    color: var(--dark-blue);
+    padding: var(--size-16);
+    border-radius: var(--size-16);
+    border-color: var(--dark-blue);
+    margin-top: 20px;
+}
+
+img{
+    display: block;
+    margin: 20px auto;
+}
+.custom-label{
+    color:var(--light-blue);
+}
+.custom-select{
+    color: var(--dark-blue);
+}
