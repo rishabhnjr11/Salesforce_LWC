@@ -12,6 +12,7 @@
 }
 .app{
     min-height: 100vh;
+    /* we can pass this to load the backgroud app using CSS  */
     background-image: url(/sfsites/c/resource/BmiAppBackground);
     background-size: cover;
     background-repeat: no-repeat;

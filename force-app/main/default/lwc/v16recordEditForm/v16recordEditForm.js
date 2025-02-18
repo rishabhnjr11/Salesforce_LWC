@@ -7,7 +7,7 @@ import ACCOUNT_PHONE from '@salesforce/schema/Account.Phone';
 import ACCOUNT_DESCRIPTION from '@salesforce/schema/Account.Description';
 
 export default class V16recordEditForm extends LightningElement {
-    @api objectApiName;
+    @api objectApiName=ACCOUNT_OBJECT;
     accountId= 'Will populate once account is created';
     nameField = ACCOUNT_NAME;
     websiteField = ACCOUNT_WEBSITE;

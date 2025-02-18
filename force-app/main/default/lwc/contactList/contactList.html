@@ -1,0 +1,16 @@
+<template>
+    <lightning-card class="base">
+        <lightning-datatable
+            columns={columns}
+            key-field=Id
+            data={data}
+        
+        >
+
+
+        </lightning-datatable>
+        <template if:true={errors}>
+            <div>{errors}</div>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Account With Contact Size">
+
+        <template if:true={data}>
+            <lightning-datatable 
+            key-field="id"
+            data={data}
+            columns={columns}
+            >
+            </lightning-datatable>            
+        </template>
+    </lightning-card>
+</template>
+<!-- <template>
+    <lightning-card title="Accounts with Contacts Count">
+        <template if:true={accounts}>
+            <lightning-datatable
+                key-field="id"
+                data={accounts}
+                columns={columns}
+            ></lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <p class="slds-text-color_error">{error}</p>
+        </template>
+    </lightning-card>
+</template> -->
